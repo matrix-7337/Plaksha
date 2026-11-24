@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="mint">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT'S ME — BRUTAL PROFILE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body data-route="home">
+  <div class="scenery" aria-hidden="true">
+    <svg class="scenery-trees scenery-trees--autumn" viewBox="0 0 1000 520" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax slice">
+      <g transform="translate(70 70) scale(0.85)">
+        <path class="autumn-trunk" d="M20 520 L34 310 L18 226 L40 230 L54 312 L72 520 Z"/>
+        <path class="autumn-limb" d="M40 318 L-6 244 M46 292 L96 212 M50 350 L108 286" stroke-width="13"/>
+        <path class="autumn-canopy autumn-canopy--green" d="M-70 206 C-84 168 -42 138 -4 150 C24 108 88 118 102 160 C142 154 166 196 138 226 C152 262 108 286 70 270 C38 302 -18 290 -28 258 C-64 264 -84 240 -70 206 Z"/>
+      </g>
+      <g transform="translate(360 20) scale(1.05)">
+        <path class="autumn-trunk" d="M30 520 L44 300 L28 214 L52 218 L66 302 L84 520 Z"/>
+        <path class="autumn-limb" d="M44 306 L-10 220 M52 276 L112 196 M58 344 L122 276" stroke-width="15"/>
+        <path class="autumn-canopy autumn-canopy--gold" d="M-78 190 C-92 146 -46 112 -2 128 C30 80 102 96 114 142 C160 138 184 186 152 220 C168 262 118 290 76 272 C40 308 -24 294 -34 258 C-74 266 -92 236 -78 190 Z"/>
+        <path class="autumn-canopy autumn-canopy--brown" d="M-38 150 C-18 116 30 108 56 136 C86 122 118 150 108 180 C76 172 46 186 18 174 C-8 184 -34 174 -38 150 Z"/>
+      </g>
+      <g transform="translate(710 85) scale(0.9)">
+        <path class="autumn-trunk" d="M18 520 L32 326 L14 240 L38 244 L52 328 L70 520 Z"/>
+        <path class="autumn-limb" d="M34 330 L-18 258 M42 300 L98 232 M46 362 L104 304" stroke-width="12"/>
+        <path class="autumn-canopy autumn-canopy--red" d="M-66 226 C-80 184 -38 152 0 166 C28 124 92 136 104 178 C144 172 166 212 138 242 C152 278 108 302 70 286 C38 318 -18 306 -28 274 C-64 280 -80 256 -66 226 Z"/>
+      </g>
+    </svg>
+
+    <div class="petal-back" id="petalBack"></div>
+
+    <svg class="japan-field" viewBox="0 0 1000 420" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax slice">
+      <path class="jf-hill-back" d="M0 180 L90 142 L190 176 L290 112 L410 174 L520 130 L640 178 L760 118 L880 166 L1000 122 L1000 420 L0 420 Z"/>
+      <path class="jf-hill-front" d="M0 238 L120 196 L240 232 L360 182 L500 230 L640 190 L780 234 L920 184 L1000 212 L1000 420 L0 420 Z"/>
+      <path class="jf-field" d="M0 286 L1000 262 L1000 420 L0 420 Z"/>
+      <path class="jf-field-light" d="M0 316 L1000 292 L1000 420 L0 420 Z"/>
+      <path class="jf-blade" d="M34 372 l18 -34 M88 386 l14 -28 M158 366 l20 -38 M228 390 l16 -30 M300 374 l20 -36 M370 392 l14 -26 M442 370 l20 -38 M512 388 l16 -30 M582 368 l20 -36 M656 392 l14 -28 M726 374 l18 -34 M800 390 l16 -30 M872 368 l20 -38 M946 388 l16 -30"/>
+    </svg>
+
+    <svg class="japan-hut" viewBox="0 0 460 420" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet">
+      <ellipse class="jh-shadow" cx="228" cy="392" rx="196" ry="18"/>
+      <rect class="jh-post" x="88" y="214" width="18" height="164"/>
+      <rect class="jh-post" x="344" y="214" width="18" height="164"/>
+      <path class="jh-wall-side" d="M96 206 L224 250 L224 374 L96 342 Z"/>
+      <path class="jh-wall" d="M224 250 L356 204 L356 346 L224 374 Z"/>
+      <path class="jh-roof-dark" d="M52 222 L222 130 L398 218 L370 246 L222 168 L84 250 Z"/>
+      <path class="jh-roof" d="M62 212 L222 118 L386 208 L356 228 L222 152 L92 236 Z"/>
+      <path class="jh-roof-light" d="M222 126 L360 202 L338 210 L222 144 L108 216 L90 210 Z"/>
+      <path class="jh-door" d="M238 278 L320 246 L320 344 L238 364 Z"/>
+      <path class="jh-window" d="M126 254 L182 272 L182 312 L126 296 Z"/>
+      <rect class="jh-window" x="250" y="202" width="70" height="28"/>
+      <ellipse class="jh-glow" cx="358" cy="350" rx="88" ry="70"/>
+      <path class="jh-log" d="M292 370 L418 328 L426 344 L300 386 Z"/>
+      <path class="jh-log" d="M296 330 L422 372 L414 388 L288 346 Z"/>
+      <circle class="jh-stone" cx="284" cy="374" r="21"/>
+      <circle class="jh-stone" cx="430" cy="372" r="20"/>
+      <circle class="jh-stone" cx="352" cy="392" r="18"/>
+      <path class="jh-flame" d="M352 352 C330 330 344 306 354 284 C360 310 380 316 374 344 C370 362 360 370 352 352 Z"/>
+      <path class="jh-flame jh-flame--mid" d="M356 352 C342 336 352 318 360 300 C364 320 378 328 370 350 C366 360 360 364 356 352 Z"/>
+      <path class="jh-flame jh-flame--core" d="M358 350 C350 338 358 326 363 314 C366 330 374 336 368 350 C365 356 361 358 358 350 Z"/>
+      <circle class="jh-spark" cx="344" cy="312" r="4"/>
+      <circle class="jh-spark jh-spark--two" cx="374" cy="306" r="3"/>
+      <circle class="jh-spark jh-spark--three" cx="360" cy="296" r="3"/>
+      <circle class="jh-spark jh-spark--four" cx="334" cy="318" r="2.6"/>
+      <circle class="jh-spark jh-spark--five" cx="382" cy="316" r="2.8"/>
+      <circle class="jh-spark jh-spark--six" cx="366" cy="304" r="2.4"/>
+    </svg>
+
+    <div class="bonfire-sparks" id="bonfireSparks" aria-hidden="true">
+      <span class="bonfire-spark bonfire-spark--one"></span>
+      <span class="bonfire-spark bonfire-spark--two"></span>
+      <span class="bonfire-spark bonfire-spark--three"></span>
+      <span class="bonfire-spark bonfire-spark--four"></span>
+      <span class="bonfire-spark bonfire-spark--five"></span>
+      <span class="bonfire-spark bonfire-spark--six"></span>
+    </div>
+
+    <svg class="china-tree" viewBox="0 0 520 560" shape-rendering="crispEdges" preserveAspectRatio="xMidYMax meet">
+      <rect class="ct-shadow" x="70" y="520" width="380" height="22"/>
+      <rect class="ct-trunk" x="244" y="300" width="36" height="220"/>
+      <rect class="ct-trunk" x="208" y="336" width="36" height="184"/>
+      <rect class="ct-trunk" x="280" y="332" width="30" height="188"/>
+      <rect class="ct-branch" x="128" y="248" width="132" height="18"/>
+      <rect class="ct-branch" x="270" y="216" width="126" height="18"/>
+      <rect class="ct-branch" x="174" y="188" width="174" height="18"/>
+      <rect class="ct-branch" x="220" y="150" width="90" height="18"/>
+      <rect class="ct-blossom ct-blossom--deep" x="92" y="188" width="76" height="52"/>
+      <rect class="ct-blossom ct-blossom--deep" x="340" y="176" width="84" height="56"/>
+      <rect class="ct-blossom ct-blossom--deep" x="216" y="118" width="74" height="44"/>
+      <rect class="ct-blossom ct-blossom--pink" x="148" y="150" width="80" height="50"/>
+      <rect class="ct-blossom ct-blossom--pink" x="300" y="138" width="64" height="48"/>
+      <rect class="ct-blossom ct-blossom--pink" x="120" y="236" width="64" height="42"/>
+      <rect class="ct-blossom ct-blossom--pink" x="352" y="232" width="72" height="46"/>
+      <rect class="ct-blossom ct-blossom--pink" x="210" y="206" width="84" height="50"/>
+      <rect class="ct-blossom ct-blossom--light" x="172" y="110" width="56" height="36"/>
+      <rect class="ct-blossom ct-blossom--light" x="270" y="100" width="56" height="36"/>
+      <rect class="ct-blossom ct-blossom--light" x="164" y="268" width="60" height="36"/>
+      <rect class="ct-blossom ct-blossom--light" x="326" y="276" width="56" height="34"/>
+      <rect class="ct-gold" x="112" y="204" width="16" height="16"/>
+      <rect class="ct-gold" x="262" y="132" width="16" height="16"/>
+      <rect class="ct-gold" x="382" y="214" width="16" height="16"/>
+      <rect class="ct-gold" x="186" y="288" width="16" height="16"/>
+      <rect class="ct-lantern-cap" x="126" y="266" width="42" height="10"/>
+      <rect class="ct-lantern" x="132" y="276" width="30" height="38"/>
+      <rect class="ct-lantern-line" x="144" y="276" width="6" height="38"/>
+      <rect class="ct-tassel" x="142" y="314" width="10" height="22"/>
+      <rect class="ct-lantern-cap" x="374" y="278" width="42" height="10"/>
+      <rect class="ct-lantern" x="380" y="288" width="30" height="38"/>
+      <rect class="ct-lantern-line" x="392" y="288" width="6" height="38"/>
+      <rect class="ct-tassel" x="390" y="326" width="10" height="22"/>
+    </svg>
+
+    <svg class="winter-snowman" viewBox="0 0 300 380" shape-rendering="geometricPrecision" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+      <ellipse class="ws-mound" cx="150" cy="356" rx="124" ry="24"/>
+      <g class="ws-body">
+        <path class="ws-arm ws-arm--left" d="M98 184 L44 144 M44 144 L22 158 M44 144 L28 126"/>
+        <path class="ws-arm ws-arm--right" d="M202 184 L256 144 M256 144 L278 126 M256 144 L276 158"/>
+        <circle class="ws-ball ws-ball--bottom" cx="150" cy="270" r="82"/>
+        <circle class="ws-ball ws-ball--middle" cx="150" cy="178" r="62"/>
+        <circle class="ws-ball ws-ball--head" cx="150" cy="96" r="50"/>
+        <path class="ws-scarf" d="M104 140 Q150 160 196 140 L204 160 Q150 182 96 160 Z"/>
+        <path class="ws-scarf-tail" d="M176 158 L218 164 L210 224 L192 220 L196 174 L176 172 Z"/>
+        <path class="ws-scarf-line" d="M198 182 L212 185 M197 198 L210 201"/>
+        <circle class="ws-eye" cx="132" cy="88" r="6"/>
+        <circle class="ws-eye" cx="168" cy="88" r="6"/>
+        <circle class="ws-cheek" cx="116" cy="106" r="9"/>
+        <circle class="ws-cheek" cx="184" cy="106" r="9"/>
+        <path class="ws-nose" d="M150 98 L190 108 L150 116 Z"/>
+        <path class="ws-smile" d="M130 120 Q150 140 170 120"/>
+        <circle class="ws-button" cx="150" cy="194" r="8"/>
+        <circle class="ws-button" cx="150" cy="230" r="8"/>
+        <circle class="ws-button" cx="150" cy="266" r="8"/>
+        <rect class="ws-hat-brim" x="98" y="48" width="104" height="18" rx="4"/>
+        <path class="ws-hat" d="M112 48 L122 6 L178 6 L188 48 Z"/>
+        <rect class="ws-hat-band" x="114" y="32" width="72" height="14"/>
+        <circle class="ws-pom" cx="178" cy="8" r="16"/>
+      </g>
+    </svg>
+  </div>
+
+  <div class="weather" id="weather" aria-hidden="true"></div>
+
+  <header class="top-strip">
+    <div class="radio-widget" id="radioWidget">
+      <button class="radio-btn" id="radioToggle" type="button" aria-expanded="false" aria-controls="radioPanel" aria-label="Open radio">
+        <span class="radio-btn__cassette" aria-hidden="true">
+          <span class="radio-btn__reel"></span>
+        </span>
+      </button>
+
+      <div class="radio-panel" id="radioPanel" hidden>
+        <div class="radio-panel__head">
+          <strong>PICK A CASSETTE</strong>
+          <span class="radio-panel__actions">
+            <button class="radio-panel__refresh" id="radioRefresh" type="button" aria-label="Refresh songs">&#8635;</button>
+            <button class="radio-panel__close" id="radioClose" type="button" aria-label="Close radio">&times;</button>
+          </span>
+        </div>
+        <div class="radio-panel__list" id="radioList" aria-live="polite"></div>
+        <div class="radio-panel__controls">
+          <button class="radio-control" id="radioControl" type="button" disabled>▶ START</button>
+        </div>
+        <audio id="radioAudio" preload="metadata"></audio>
+      </div>
+    </div>
+
+    <div class="theme-switcher">
+      <button class="theme-switcher__btn" id="themeToggle" type="button" aria-label="Change theme">
+        <svg viewBox="0 0 24 24" shape-rendering="crispEdges" aria-hidden="true">
+          <path d="M6 3h12v3h3v12h-3v3H6v-3H3V6h3V3Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+          <path d="M7 7h5v5H7V7Zm6 0h5v5h-5V7ZM7 13h5v5H7v-5Z" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+
+    <span class="top-strip__name">Plaksha Chii <span class="top-strip__heart" aria-hidden="true">♥</span></span>
+    <span class="top-strip__gem top-strip__gem--one"></span>
+    <span class="top-strip__gem top-strip__gem--two"></span>
+    <span class="top-strip__gem top-strip__gem--three"></span>
+    <div class="header-lanterns" aria-hidden="true">
+      <span class="lantern lantern--one">
+        <span class="lantern__string"></span>
+        <span class="lantern__cap"></span>
+        <span class="lantern__body" data-mark="福"></span>
+        <span class="lantern__base"></span>
+        <span class="lantern__tassel"></span>
+      </span>
+      <span class="lantern lantern--two">
+        <span class="lantern__string"></span>
+        <span class="lantern__cap"></span>
+        <span class="lantern__body" data-mark="春"></span>
+        <span class="lantern__base"></span>
+        <span class="lantern__tassel"></span>
+      </span>
+      <span class="lantern lantern--three">
+        <span class="lantern__string"></span>
+        <span class="lantern__cap"></span>
+        <span class="lantern__body" data-mark="和"></span>
+        <span class="lantern__base"></span>
+        <span class="lantern__tassel"></span>
+      </span>
+      <span class="lantern lantern--four">
+        <span class="lantern__string"></span>
+        <span class="lantern__cap"></span>
+        <span class="lantern__body" data-mark="祭"></span>
+        <span class="lantern__base"></span>
+        <span class="lantern__tassel"></span>
+      </span>
+    </div>
+    <div class="header-buckets" aria-hidden="true">
+      <span class="header-bucket header-bucket--flower-one">
+        <span class="bucket__handle"></span>
+        <span class="bucket__bloom bucket__bloom--one"></span>
+        <span class="bucket__bloom bucket__bloom--two"></span>
+        <span class="bucket__bloom bucket__bloom--three"></span>
+        <span class="bucket__rim"></span>
+        <span class="bucket__body"></span>
+      </span>
+      <span class="header-bucket header-bucket--fruit-one">
+        <span class="bucket__handle"></span>
+        <span class="bucket__fruit bucket__fruit--one"></span>
+        <span class="bucket__fruit bucket__fruit--two"></span>
+        <span class="bucket__fruit bucket__fruit--three"></span>
+        <span class="bucket__rim"></span>
+        <span class="bucket__body"></span>
+      </span>
+      <span class="header-bucket header-bucket--flower-two">
+        <span class="bucket__handle"></span>
+        <span class="bucket__bloom bucket__bloom--one"></span>
+        <span class="bucket__bloom bucket__bloom--two"></span>
+        <span class="bucket__bloom bucket__bloom--three"></span>
+        <span class="bucket__rim"></span>
+        <span class="bucket__body"></span>
+      </span>
+      <span class="header-bucket header-bucket--fruit-two">
+        <span class="bucket__handle"></span>
+        <span class="bucket__fruit bucket__fruit--one"></span>
+        <span class="bucket__fruit bucket__fruit--two"></span>
+        <span class="bucket__fruit bucket__fruit--three"></span>
+        <span class="bucket__rim"></span>
+        <span class="bucket__body"></span>
+      </span>
+    </div>
+  </header>
+
+  <main class="app">
+    <section class="screen screen--home is-active" id="home" data-screen="home">
+      <div class="home__content">
+        <div class="intro">
+          <div class="intro__avatar">
+            <div class="avatar" id="avatarBox" role="img" aria-label="Uploaded portrait">
+              <img class="avatar__img" id="avatarImage" alt="A very accurate portrait." hidden>
+            </div>
+            <p class="avatar__caption">A VERY ACCURATE PORTRAIT.</p>
+          </div>
+
+          <section class="about" aria-labelledby="about-title">
+            <h2 class="about__label" id="about-title">ABOUT ME</h2>
+            <p class="about__text">
+              I collect tiny moments, lose arguments with my to-do list, and take 
+              procatination to another level. I code at 3 , read novels & fiction
+              and think a good story should have thick borders and a loud shadow.
+              I hope to be a RAW agent for money and all.
+            </p>
+          </section>
+        </div>
+
+        <nav class="nav" aria-label="Profile sections">
+          <a class="nav__btn nav__btn--gallery" href="#gallery">
+            <svg class="nav__icon" viewBox="0 0 48 48" shape-rendering="crispEdges" aria-hidden="true">
+              <path d="M6 15h9l4-6h10l4 6h9v24H6V15Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="round"/>
+              <rect x="17" y="22" width="14" height="12" fill="none" stroke="currentColor" stroke-width="4"/>
+            </svg>
+            <span class="nav__btn-text">GALLERY</span>
+            <span class="nav__btn-note">10 PHOTOS / FLIP THEM</span>
+          </a>
+          <a class="nav__btn nav__btn--hobbies" href="#hobbies">
+            <svg class="nav__icon" viewBox="0 0 48 48" shape-rendering="crispEdges" aria-hidden="true">
+              <rect x="6" y="7" width="36" height="10" fill="none" stroke="currentColor" stroke-width="4"/>
+              <rect x="6" y="19" width="36" height="10" fill="none" stroke="currentColor" stroke-width="4"/>
+              <rect x="6" y="31" width="36" height="10" fill="none" stroke="currentColor" stroke-width="4"/>
+            </svg>
+            <span class="nav__btn-text">HOBBIES</span>
+            <span class="nav__btn-note">9 THINGS I DO</span>
+          </a>
+          <a class="nav__btn nav__btn--friends" href="#friends">
+            <svg class="nav__icon" viewBox="0 0 48 48" shape-rendering="crispEdges" aria-hidden="true">
+              <rect x="6" y="10" width="12" height="12" fill="none" stroke="currentColor" stroke-width="4"/>
+              <rect x="30" y="10" width="12" height="12" fill="none" stroke="currentColor" stroke-width="4"/>
+              <rect x="2" y="27" width="20" height="13" fill="none" stroke="currentColor" stroke-width="4"/>
+              <rect x="26" y="27" width="20" height="13" fill="none" stroke="currentColor" stroke-width="4"/>
+            </svg>
+            <span class="nav__btn-text">FRIENDS</span>
+            <span class="nav__btn-note">15 CLOSED BOXES</span>
+          </a>
+          <a class="nav__btn nav__btn--rate" href="#rate">
+            <svg class="nav__icon" viewBox="0 0 48 48" shape-rendering="crispEdges" aria-hidden="true">
+              <path d="M24 4l5 12h13l-10 9 4 13-12-8-12 8 4-13L6 16h13l5-12Z" fill="none" stroke="currentColor" stroke-width="4" stroke-linejoin="miter"/>
+            </svg>
+            <span class="nav__btn-text">RATE ME</span>
+            <span class="nav__btn-note">PICK A STAR</span>
+          </a>
+        </nav>
+      </div>
+
+      <footer class="footer">Birthday Gift ;)</footer>
+    </section>
+
+    <section class="screen screen--gallery" id="gallery" data-screen="gallery" hidden>
+      <header class="subhead">
+        <a class="back" href="#home">&larr; BACK</a>
+        <h2 class="subhead__title">THE GALLERY</h2>
+        <span class="subhead__note">CLICK A FRAME TO FLIP IT</span>
+      </header>
+
+      <div class="camera" aria-hidden="true">
+        <div class="camera__top"></div>
+        <div class="camera__body">
+          <div class="camera__flash"></div>
+          <div class="camera__lens"><span></span></div>
+        </div>
+        <div class="camera__beam"></div>
+      </div>
+
+      <div class="gallery__grid" id="galleryGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="screen screen--hobbies" id="hobbies" data-screen="hobbies" hidden>
+      <header class="subhead">
+        <a class="back" href="#home">&larr; BACK</a>
+        <h2 class="subhead__title">MY HOBBIES</h2>
+        <span class="subhead__note">9 BOXES. ZERO SELF-CONTROL.</span>
+      </header>
+
+      <div class="hobbies__stage" id="hobbiesStage" aria-live="polite"></div>
+    </section>
+
+    <section class="screen screen--friends" id="friends" data-screen="friends" hidden>
+      <header class="subhead">
+        <a class="back" href="#home">&larr; BACK</a>
+        <h2 class="subhead__title">MY FRIENDS</h2>
+        <span class="subhead__note">15 CLOSED BOXES / PICK ONE</span>
+      </header>
+
+      <div class="friends__stage" id="friendsStage" aria-live="polite">
+        <div class="friends__piles" id="friendsPiles"></div>
+      </div>
+    </section>
+
+    <section class="screen screen--rate" id="rate" data-screen="rate" hidden>
+      <header class="subhead">
+        <a class="back" href="#home">&larr; BACK</a>
+        <h2 class="subhead__title">RATE ME</h2>
+        <span class="subhead__note">ONE STAR. NO RUNNING AWAY.</span>
+      </header>
+
+      <div class="rate__card">
+        <p class="rate__prompt">SO... WHAT DO YOU THINK?</p>
+        <div class="rate__stars" role="group" aria-label="Rate me">
+          <button type="button" data-rating="1" aria-label="1 star">★</button>
+          <button type="button" data-rating="2" aria-label="2 stars">★</button>
+          <button type="button" data-rating="3" aria-label="3 stars">★</button>
+          <button type="button" data-rating="4" aria-label="4 stars">★</button>
+          <button type="button" data-rating="5" aria-label="5 stars">★</button>
+        </div>
+        <p class="rate__message" id="rateMessage" aria-live="polite">Tap a star.</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="letter-modal" id="letterModal" hidden>
+    <div class="letter-modal__backdrop" data-close-letter></div>
+    <div class="letter" role="dialog" aria-modal="true" aria-labelledby="letterTitle">
+      <button class="letter__close" type="button" data-close-letter aria-label="Close letter">&times;</button>
+      <span class="letter__stamp" aria-hidden="true">♥</span>
+      <p class="letter__eyebrow">A LETTER FOR</p>
+      <h3 class="letter__title" id="letterTitle"></h3>
+      <p class="letter__body">
+        You are officially stored in one of my tiny crew boxes. Thanks for being
+        loud, weird, and completely unforgettable.
+      </p>
+      <p class="letter__sign">&mdash; Plaksha </p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
